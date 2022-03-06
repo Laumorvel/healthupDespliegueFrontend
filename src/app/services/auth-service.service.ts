@@ -13,7 +13,7 @@ export class AuthServiceService {
 
 
   login(username:string,password:string){
-    const url = `${this.baseUrl}/auth/login`;
+    const url = `${this.baseUrl}auth/login`;
     const body = {
       'username': username,
       'password': password
