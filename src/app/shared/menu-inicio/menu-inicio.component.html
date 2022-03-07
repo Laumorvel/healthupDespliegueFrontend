@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <!--LOGO-->
       <a class="navbar-brand" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
-        <img src="../../assets/img/LOGOH-modified.png" class="icon hoverZoom" />
+        <img src="src/assets/img/LOGOH-modified.png" class="icon hoverZoom" />
       </a>
 
       <button
@@ -24,19 +24,19 @@
 
           <li class="nav-item hoverZoom">
             <a class="nav-link text-black mx-md-3 mx-sm-3" routerLink="/signUp"  routerLinkActive="active"
-              > <img src="../../assets/img/account.png" class="icon imgIconos signup" />Sign up</a
+              > <img src="./../assets/img/account.png" class="icon imgIconos signup" />Sign up</a
             >
           </li>
           <li class="nav-item hoverZoom">
             <a class="nav-link text-black" routerLink="/logIn"  routerLinkActive="active">
-              <img src="../../assets/img/login.png" class="icon login" />Log in</a>
+              <img src="../assets/img/login.png" class="icon login" />Log in</a>
           </li>
           <li class="nav-item hoverZoom">
             <a
               class="nav-link text-black mx-md-3 mx-sm-3"
               routerLink="/contactUs"  routerLinkActive="active"
               >
-              <img src="../../assets/img/email.png" class="icon imgIconos" />Contact Us</a
+              <img src="/assets/img/email.png" class="icon imgIconos" />Contact Us</a
             >
           </li>
         </ul>
@@ -47,12 +47,12 @@
 
             <li class="nav-item hoverZoom">
               <a class="nav-link text-black hover-zoom" routerLink="/userDashboard/{{userId}}"  routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-                ><img src="../../assets/img/casa.png" class="icon casa" /> Dashboard</a
+                ><img src="./assets/img/casa.png" class="icon casa" /> Dashboard</a
               >
             </li>
             <li class="nav-item hoverZoom">
               <a class="nav-link text-black" data-bs-toggle="modal" data-bs-target="#exampleModal"  routerLinkActive="active"
-                ><img src="../../assets/img/logout(1).png" class="icon imgIconos" /> Logout</a
+                ><img src="assets/img/logout(1).png" class="icon imgIconos" /> Logout</a
               >
             </li>
           </ul>
