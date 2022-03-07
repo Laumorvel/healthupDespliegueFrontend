@@ -1,5 +1,5 @@
 <div class="row mb-5">
-  <p class="nombre"><img src="../../assets/img/account.png" class="iconito" />  {{ user.username}}</p>
+  <p class="nombre"><img src="assets/img/account.png" class="iconito" />  {{ user.username}}</p>
   <p class="title text-center mt-5">Did you accomplish your goals today?</p>
 
   <div class="col-md-4"></div>
@@ -17,17 +17,17 @@
         </div>
       </div>
       <!--imagen pesas-->
-      <img src="../../assets/img/dumbbell.png" class="icon" />
+      <img src="assets/img/dumbbell.png" class="icon" />
 
       <!--caja-->
       <div class="card mt-5 border-0 w-100 d-inline-block">
         <!--YES-->
         <button class="btn boton yes" (click)="pulsado('sport', true)">
-          <img src="../../assets/img/cheque.png" name="yes" class="iconito" />
+          <img src="assets/img/cheque.png" name="yes" class="iconito" />
         </button>
         <!--NO-->
         <button class="btn boton no" (click)="pulsado('sport', false)">
-          <img src="../../assets/img/incorrect.png" name="no" class="iconito" />
+          <img src="assets/img/incorrect.png" name="no" class="iconito" />
         </button>
       </div>
     </div>
@@ -45,16 +45,16 @@
         </div>
       </div>
       <!--imagen comida-->
-      <img src="../../assets/img/nutrition.png" class="icon" />
+      <img src="assets/img/nutrition.png" class="icon" />
       <!--caja-->
       <div class="card mt-5 w-100 border-0 d-inline-block">
         <!--YES-->
         <button class="boton btn yes" (click)="pulsado('food', true)">
-          <img src="../../assets/img/cheque.png" name="yes" class="iconito" />
+          <img src="assets/img/cheque.png" name="yes" class="iconito" />
         </button>
         <!--NO-->
         <button class="boton btn no" (click)="pulsado('food', false)">
-          <img src="../../assets/img/incorrect.png" name="no" class="iconito" />
+          <img src="assets/img/incorrect.png" name="no" class="iconito" />
         </button>
       </div>
     </div>
@@ -135,17 +135,17 @@
             <td>
               <!--TIPO-->
               <ng-container *ngIf="logro.tipo === 'food'" ;else second
-                ><img src="../../assets/img/nutrition.png" class="iconito" />
+                ><img src="assets/img/nutrition.png" class="iconito" />
               </ng-container>
               <ng-container #second *ngIf="logro.tipo === 'sport'"
-                ><img src="../../assets/img/dumbbell.png" class="iconito"
+                ><img src="assets/img/dumbbell.png" class="iconito"
               /></ng-container>
             </td>
             <td>
               <!--LOGRADO-->
               <ng-container *ngIf="logro.noRegistrado != null" ;else second
                 ><img
-                  src="../../assets/img/signo-de-interrogacion.png"
+                  src="assets/img/signo-de-interrogacion.png"
                   class="iconito"
               /></ng-container>
               <ng-container
@@ -153,12 +153,12 @@
                 *ngIf="logro.logradoDia && logro.noRegistrado == null"
                 ;else
                 third
-                ><img src="../../assets/img/garrapata.png" class="iconito"
+                ><img src="assets/img/garrapata.png" class="iconito"
               /></ng-container>
               <ng-container
                 #third
                 *ngIf="!logro.logradoDia && logro.noRegistrado == null"
-                ><img src="../../assets/img/cancel.png" class="iconito"
+                ><img src="assets/img/cancel.png" class="iconito"
               /></ng-container>
             </td>
           </tr>
@@ -191,13 +191,13 @@
             <td>{{ logro.fecha }}</td>
             <td>
               <!--TIPO-->
-              <img src="../../assets/img/nutrition.png" class="iconito" />
+              <img src="assets/img/nutrition.png" class="iconito" />
             </td>
             <td>
               <!--LOGRADO-->
               <ng-container *ngIf="logro.noRegistrado != null" ;else second
                 ><img
-                  src="../../assets/img/signo-de-interrogacion.png"
+                  src="assets/img/signo-de-interrogacion.png"
                   class="iconito"
               /></ng-container>
               <ng-container
@@ -205,12 +205,12 @@
                 *ngIf="logro.logradoDia && logro.noRegistrado == null"
                 ;else
                 third
-                ><img src="../../assets/img/garrapata.png" class="iconito"
+                ><img src="assets/img/garrapata.png" class="iconito"
               /></ng-container>
               <ng-container
                 #third
                 *ngIf="!logro.logradoDia && logro.noRegistrado == null"
-                ><img src="../../assets/img/cancel.png" class="iconito"
+                ><img src="assets/img/cancel.png" class="iconito"
               /></ng-container>
             </td>
           </tr>
@@ -244,14 +244,14 @@
               <td>{{ logro.fecha }}</td>
               <td>
                 <!--TIPO-->
-                <img src="../../assets/img/dumbbell.png" class="iconito"
+                <img src="assets/img/dumbbell.png" class="iconito"
               />
               </td>
               <td>
                 <!--LOGRADO-->
                 <ng-container *ngIf="logro.noRegistrado != null" ;else second
                   ><img
-                    src="../../assets/img/signo-de-interrogacion.png"
+                    src="assets/img/signo-de-interrogacion.png"
                     class="iconito"
                 /></ng-container>
                 <ng-container
@@ -259,12 +259,12 @@
                   *ngIf="logro.logradoDia && logro.noRegistrado == null"
                   ;else
                   third
-                  ><img src="../../assets/img/garrapata.png" class="iconito"
+                  ><img src="assets/img/garrapata.png" class="iconito"
                 /></ng-container>
                 <ng-container
                   #third
                   *ngIf="!logro.logradoDia && logro.noRegistrado == null"
-                  ><img src="../../assets/img/cancel.png" class="iconito"
+                  ><img src="assets/img/cancel.png" class="iconito"
                 /></ng-container>
               </td>
 
