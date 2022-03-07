@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  baseUrl: 'https://healthupmysql.herokuapp.com/',
+  baseUrl: 'https://healthupmysql.herokuapp.com',
   production: false
 };
 
