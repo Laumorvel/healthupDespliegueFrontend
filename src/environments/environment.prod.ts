@@ -1,4 +1,4 @@
 export const environment = {
-  baseUrl: 'https://healthupheroku.herokuapp.com/',
+  baseUrl: 'https://healthupmysql.herokuapp.com/',
   production: true
 };
